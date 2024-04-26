@@ -7,15 +7,15 @@
     <title>Register Akun</title>
 </head>
 <body>
-    <form action="" method="post">
+    <form action="" method="get">
         <label>Nama Lengkap:</label>
         <input type="text" name="nama_lengkap">
 
         <br>
 
         <label>Jenis Kelamin:</label>
-        <input type="radio" name="j_kelamin"> Laki-Laki
-        <input type="radio" name="j_kelamin"> Perempuan
+        <input type="radio" name="j_kelamin" value="laki"> Laki-Laki
+        <input type="radio" name="j_kelamin" value="wanita"> Perempuan
 
         <br>
         <label>Kabupaten/Kota:</label>
@@ -31,8 +31,16 @@
         <textarea name="alamat" cols="30" rows="10"></textarea>
 
         <br>
-        <input type="button" value="Kirim">
+        <input type="submit" value="Kirim">
 
     </form>
 </body>
 </html>
+<?php
+echo "<pre>";
+    echo "Nama Lengkap: ".$_GET['nama_lengkap']."<br>";
+    echo "Jenis Kelamin: ".$_GET['j_kelamin']."<br>";
+    echo "Kota: ".$_GET['kota']."<br>";
+    echo "Alamat: ".$_GET['alamat']."<br>";
+echo "</pre>";
+?>
