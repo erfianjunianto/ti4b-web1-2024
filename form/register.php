@@ -7,7 +7,7 @@
     <title>Register Akun</title>
 </head>
 <body>
-    <form action="" method="get">
+    <form action="" method="post">
         <label>Nama Lengkap:</label>
         <input type="text" name="nama_lengkap">
 
