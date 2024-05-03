@@ -14,8 +14,8 @@
         <br>
 
         <label>Jenis Kelamin:</label>
-        <input type="radio" name="j_kelamin" value="laki"> Laki-Laki
-        <input type="radio" name="j_kelamin" value="wanita"> Perempuan
+        <input type="radio" name="j_kelamin" value="l"> Laki-Laki
+        <input type="radio" name="j_kelamin" value="p"> Perempuan
 
         <br>
         <label>Kabupaten/Kota:</label>
