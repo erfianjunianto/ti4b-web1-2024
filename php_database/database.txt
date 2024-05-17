@@ -1,0 +1,10 @@
+CREATE DATABASE `ti4b_web`;
+
+
+CREATE TABLE `anggota` (
+  `id` int(11) NOT NULL,
+  `nama_lengkap` varchar(50) DEFAULT NULL,
+  `jenis_kelamin` enum('laki','wanita') DEFAULT 'laki',
+  `alamat` text DEFAULT NULL,
+  `status` tinyint(1) NOT NULL DEFAULT 1 COMMENT '1 = Aktif, 2 = Non Aktif'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
